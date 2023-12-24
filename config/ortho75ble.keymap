@@ -16,12 +16,6 @@
 / {
     combos {
         compatible = "zmk,combos";
-
-        mute {
-            bindings = <&none>;
-            key-positions = <66 67>;
-            layers = <2>;
-        };
     };
 
     macros {
@@ -55,11 +49,11 @@
 
         layer_2 {
             bindings = <
-&kp ESC    &none  &none     &none      &none     &none      &kp LANG1     &kp LANG2     &kp K_APP  &none      &none     &none     &none      &none    &kp BSPC
-&kp TAB    &none  &none     &none      &none     &none      &kp K_PP      &kp C_PP      &none      &kp PG_UP  &kp HOME  &kp UP    &kp END    &kp INS  &none
-&kp CAPS   &none  &none     &none      &none     &none      &kp C_FF      &kp C_RW      &none      &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp ENTER
-&kp LSHFT  &none  &none     &none      &none     &none      &mkp MB4      &mkp MB5      &none      &none      &none     &none     &none      &none    &kp RSHFT
-&to 0      &to 1  &kp LALT  &kp LCTRL  &kp LGUI  &kp SPACE  &kp C_VOL_DN  &kp C_VOL_UP  &none      &kp SPACE  &none     &none     &none      &none    &none
+&kp ESC    &none  &none     &none      &none     &none      &kp LANG1     &kp LANG2     &kp K_APP   &none      &none     &none     &none      &none    &kp BSPC
+&kp TAB    &none  &none     &none      &none     &none      &kp K_PP      &kp C_PP      &none       &kp PG_UP  &kp HOME  &kp UP    &kp END    &kp INS  &none
+&kp CAPS   &none  &none     &none      &none     &none      &kp C_FF      &kp C_RW      &none       &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp DEL  &kp ENTER
+&kp LSHFT  &none  &none     &none      &none     &none      &mkp MB4      &mkp MB5      &none       &none      &none     &none     &none      &none    &kp RSHFT
+&to 0      &to 1  &kp LALT  &kp LCTRL  &kp LGUI  &kp SPACE  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &kp SPACE  &none     &none     &none      &none    &none
             >;
         };
     };
